@@ -6,8 +6,8 @@ Fusing remote sensing images from multiple sources significantly improves the ac
 
 ## Requirements:
 
-- Python 3.7
-- PyTorch >= 1.12.1
+- Python 3.11
+- PyTorch >= 2.10.0
 - mamba-ssm>=2.3.0
 
 ## Usage:
