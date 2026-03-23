@@ -1,4 +1,4 @@
-## PFMDM: Pre-Fusion Multi-Directional SSM for Multi-source Remote Sensing Image Fusion
+## Synergising Parameter-Efficient State Space Models with Hierarchical Attention: A Unified Framework for Multi-Source Remote Sensing Image Fusion
 
 ## Abstract
 
