@@ -1,6 +1,6 @@
 # Synergising Parameter-Efficient State Space Models with Hierarchical Attention: A Unified Framework for Multi-Source Remote Sensing Image Fusion
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/10.5281/zenodo.19181528.svg)](https://doi.org/10.5281/zenodo.19181528)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19181528.svg)](https://doi.org/10.5281/zenodo.19181528)
 
 This repository contains the official PyTorch implementation of the paper:
 
@@ -52,14 +52,14 @@ The code supports the following datasets:
 - **Indian Pines** (hyperspectral, unimodal)
 - **MPOLSAR** (PolSAR, unimodal)
 
-Please download the datasets from their official sources and organize them under the `./data/` directory as follows:
+Please download the datasets from their official sources and organize them under the `./Datasets/` directory as follows:
 
 ```
-./data/
-  ├── muufl/
+./Datasets/
+  ├── MUUFL/
   ├── houston/
-  ├── augsburg/
-  ├── indian_pines/
+  ├── Augsburg/
+  ├── Indian_pines/
   └── mpolsar/
 ```
 
@@ -117,7 +117,7 @@ If you use this code or find our work helpful, please cite:
 ```bibtex
 @unpublished{cui2026pfmdm,
   title         = {Synergising Parameter-Efficient State Space Models with Hierarchical Attention: A Unified Framework for Multi-Source Remote Sensing Image Fusion},
-  author        = {Xiandai Cui, Liping Huang, and Li Zhang},
+  author        = {Cui, Xiandai and Huang, Liping and Zhang, Li},
   note          = {Submitted to The Visual Computer, under review},
   year          = {2026}
 }
