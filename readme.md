@@ -1,10 +1,10 @@
-# Synergising Parameter-Efficient State Space Models with Hierarchical Attention: A Unified Framework for Multi-Source Remote Sensing Image Fusion
+# PFMDM: Pre-Fusion Multi-Directional SSM for Multi-source Remote Sensing Image Fusion
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19181528.svg)](https://doi.org/10.5281/zenodo.19181528)
 
 This repository contains the official PyTorch implementation of the paper:
 
-**“Synergising Parameter-Efficient State Space Models with Hierarchical Attention: A Unified Framework for Multi-Source Remote Sensing Image Fusion”**  
+**“PFMDM: Pre-Fusion Multi-Directional SSM for Multi-source Remote Sensing Image Fusion”**  
 Authors: Xiandai Cui, Li Zhang *  
 *The Visual Computer, 2026 (submitted)*
 
@@ -14,7 +14,7 @@ Authors: Xiandai Cui, Li Zhang *
 
 ## 📌 Abstract
 
-The fusion of multi-source remote sensing imagery is critical for advancing land cover classification and environmental monitoring. While Vision Transformers excel at capturing global context, their quadratic computational complexity hinders processing of high-resolution data. Conversely, the emerging Mamba architecture offers linear efficiency, but its adaptation for multi-directional image scanning often necessitates multiple independent State Space Model (SSM) modules, increasing parameters and computation, and existing multi-scale fusion methods lack hierarchical context modeling. To address these limitations, we propose the Pre-Fusion Multi-Directional Mamba (PFMDM) framework, built on two core innovations. First, the Pre-Fusion Multi-Directional Block (PFMDB) extracts multi-directional features via parallel convolutional branches, fuses them through a gating mechanism, and processes them with a single shared SSM block, significantly reducing parameters and computation while preserving omnidirectional context. Second, the Multi-Scale Contextualized Attention (MSCA) module implements a two-stage paradigm: local multi-scale dilated convolution extraction followed by global self-attention integration, achieving progressive hierarchical context modeling from local details to global semantics. Here we show that PFMDM achieves state-of-the-art performance across three multi-source benchmarks (Muufl, University of Houston, Augsburg) with overall accuracies of 96.31%, 99.86%, and 97.80%, respectively, and also generalises robustly to unimodal hyperspectral (Indian Pines) and PolSAR (MPOLSAR) data. This work presents a unified, parameter-efficient, and context-aware fusion paradigm, offering a robust and generalisable solution for advanced multi-source remote sensing analysis.
+Fusing remote sensing images from multiple sources significantly improves the accuracy and effectiveness of land cover classification and environmental monitoring. Current mainstream methods face two major limitations. First, Vision Transformers (ViTs) can capture global contextual information, but their computational complexity grows quadratically with input size. This makes them inefficient for processing high-resolution remote sensing images. Second, while the emerging Mamba model offers linear complexity, its multi-directional scanning in the image domain usually requires multiple independent State Space Model (SSM) modules. This leads to a significant increase in both parameters and computational cost. Moreover, existing multi-scale fusion methods lack a hierarchical contextual modeling mechanism that progressively integrates information from local to global levels. To address these issues, this paper proposes the Pre-Fusion Multi-Directional Mamba (PFMDM) framework. Its core innovations are: (1) the design of the Pre-Fusion Multi-Directional Block (PFMDB), which first extracts multi-directional features through parallel convolutional branches, then fuses them via a gating mechanism before feeding them into a single shared Mamba block, significantly reducing parameter and computational complexity while preserving the integrity of multi-directional information; and (2) the introduction of the Multi-Scale Contextualized Attention (MSCA) module, which implements a two-stage paradigm of "local multi-scale dilated convolution extraction" followed by "global self-attention integration," achieving progressive hierarchical contextual modeling from local details to global semantics. The proposed approach was tested on Muufl, the University of Houston, and the Augsburg datasets, yielding overall accuracy rates of 96.31%, 99.86%, and 97.80%, respectively. Additional experiments were performed on unimodal datasets, including Indian Pines (hyperspectral) and MPOLSAR (PolSAR). The results indicate that PFMDM offers a unified framework for multi-source remote sensing image fusion that is parameter-efficient, sensitive to contextual information, and robust across modalities.
 
 ---
 
@@ -116,9 +116,9 @@ If you use this code or find our work helpful, please cite:
 
 ```bibtex
 @unpublished{cui2026pfmdm,
-  title         = {Synergising Parameter-Efficient State Space Models with Hierarchical Attention: A Unified Framework for Multi-Source Remote Sensing Image Fusion},
+  title         = {PFMDM: Pre-Fusion Multi-Directional SSM for Multi-source Remote Sensing Image Fusion},
   author        = {Cui, Xiandai and Huang, Liping and Zhang, Li},
-  note          = {Submitted to The Visual Computer, under review},
+  note          = {Submitted to Signal, Image and Video Processing, under review},
   year          = {2026}
 }
 ```
