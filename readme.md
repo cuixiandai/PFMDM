@@ -5,7 +5,7 @@
 This repository contains the official PyTorch implementation of the paper:
 
 **“PFMDM: Pre-Fusion Multi-Directional SSM for Multi-source Remote Sensing Image Fusion”**  
-Authors: Xiandai Cui, Li Zhang *  
+Authors: Xiandai Cui, Liping Huang, Li Zhang *  
 *The Visual Computer, 2026 (submitted)*
 
 > **Note:** This code is directly related to the manuscript submitted to *The Visual Computer* . If you find this work useful for your research, please cite our paper (BibTeX entry provided at the end of this README).
